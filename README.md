@@ -133,5 +133,4 @@ Open to discussions on:
 ```
 
 
-* make it *more aggressive recruiter-style (FAANG-level framing)*
-* or convert it into a **GitHub landing page (with visuals + architecture diagram)**
+
