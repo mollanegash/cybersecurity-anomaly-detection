@@ -1,108 +1,96 @@
-# Real-Time Phishing Detection Platform (Production ML System)
+# 🔐 Phishing Detection Using Machine Learning
 
-A **production-grade distributed system** that detects phishing URLs in real time using machine learning, streaming pipelines, and cloud-native microservices.
+![Python](https://img.shields.io/badge/ML-Python-yellow?logo=python)
+![Scikit-learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![Security](https://img.shields.io/badge/Cybersecurity-Phishing-red)
 
-Designed to demonstrate **ML engineering + backend systems + scalable architecture (SWE-focused AI system design).**
+## 📌 Introduction
 
----
+Phishing attacks remain one of the most common cybersecurity threats, affecting millions of users worldwide through deceptive websites and malicious URLs.
 
-## ⚡ Why This Project Matters (SWE Framing)
+This project demonstrates a **machine learning-based phishing detection system** that identifies suspicious URLs using anomaly detection techniques.
 
-This is not a notebook model — it is a **fully deployed ML system** with:
-
-- Real-time data ingestion (Kafka)
-- Distributed processing (Spark on Databricks)
-- ML inference service (Spring Boot API)
-- Cloud deployment (Azure AKS Kubernetes)
-- Production monitoring (Prometheus + Grafana)
+The goal is to build a lightweight and scalable approach for detecting phishing behavior using URL-based features.
 
 ---
 
-## 🧠 System Architecture
+## 🧠 Skills Used
 
-
-Data Sources (URL Streams)
-↓
-Databricks (Spark ETL)
-↓
-Feature Engineering (15+ signals)
-↓
-Isolation Forest Model
-↓
-MLflow Model Registry
-↓
-Spring Boot Inference API (Java)
-↓
-Azure Kubernetes Service (AKS)
-↓
-Kafka Event Streaming
-↓
-Alerting System (WhatsApp API)
-
+- Machine Learning (Unsupervised Learning)
+- Isolation Forest for Anomaly Detection
+- Data Analysis & Feature Engineering
+- Data Visualization
+- Python Programming (Scikit-learn, Pandas, Matplotlib)
 
 ---
 
-## 🔥 Engineering Highlights (What Recruiters Care About)
+## ⚙️ Project Overview
 
-### 🧱 Distributed Systems
-- Built Spark ETL pipeline processing **500K+ URLs/day**
-- Designed event-driven architecture using **Kafka**
-- Implemented microservices deployed on **Kubernetes (AKS)**
+This project uses the **Phishing Website Dataset** to detect malicious patterns in URLs.
 
-### ⚙️ Backend Engineering
-- Built low-latency **Java Spring Boot inference API**
-- Achieved **50ms p99 response latency**
-- Designed stateless scalable API layer for ML inference
-
-### 🤖 ML Engineering (Not Just ML)
-- Used **Isolation Forest for anomaly detection**
-- Engineered **15+ behavioral URL features**
-- Deployed model via **MLflow registry**
-
-### ☁️ Production / DevOps
-- CI/CD using **GitOps workflows**
-- Infrastructure on **Azure Kubernetes Service**
-- Monitoring via **Prometheus + Grafana**
+### Pipeline:
+- Data preprocessing and cleaning  
+- Feature selection and engineering  
+- Model training using Isolation Forest  
+- Anomaly detection for phishing identification  
+- Visualization of key security indicators  
 
 ---
 
-## 📊 Impact
+## 📊 Key Findings
 
-- 🚀 500K+ URLs processed daily
-- ⚡ 50ms p99 inference latency
-- 📉 80% reduction in manual security triage
-- 🧠 Real-time detection of phishing patterns:
-  - IP-based URLs
-  - URL shorteners
-  - Subdomain abuse
-  - HTTPS spoofing
-  - Domain age anomalies
+- **Most important indicator:**
+  - Using IP address in URL to hide suspicious content  
+  - Mean anomaly score: **0.5371**
 
----
-
-## 🛠️ Tech Stack (SWE-Oriented)
-
-**Backend:** Java, Spring Boot, REST APIs  
-**Data Engineering:** Spark, Databricks  
-**ML:** Python, Isolation Forest, MLflow  
-**Streaming:** Kafka  
-**Cloud:** Azure AKS, Kubernetes, Helm  
-**Observability:** Prometheus, Grafana  
-**Databases:** PostgreSQL, Redis  
+- **Top phishing indicators:**
+  - IP-based URLs  
+  - Multiple subdomains  
+  - HTTPS misuse in URL structure  
+  - Long domain registration patterns  
+  - URL shortening services  
+  - Redirect patterns (`//` misuse)  
 
 ---
 
-## 📌 Key Takeaway
+## 🤖 Model Performance
 
-This project demonstrates:
-
-> ✔ Ability to design scalable backend systems  
-> ✔ Ability to deploy ML into production  
-> ✔ Understanding of distributed systems + cloud infrastructure  
-> ✔ SWE + ML Engineering hybrid skillset  
+- Isolation Forest effectively detected anomalies without labeled data  
+- Strong performance in identifying hidden phishing patterns  
+- Demonstrates the effectiveness of unsupervised learning in cybersecurity  
 
 ---
 
-## 📬 Open to Discussion
+## 📈 Insights
 
-System design • Backend engineering • ML infrastructure • Distributed systems
+- URL structure is a strong predictor of phishing behavior  
+- Attackers commonly manipulate domains and redirects  
+- Unsupervised learning is effective when labeled data is limited  
+
+---
+
+## 🚀 Project Highlights
+
+- Lightweight anomaly detection system  
+- No dependency on labeled datasets  
+- Suitable for real-time phishing detection systems  
+- Strong baseline for cybersecurity ML applications  
+
+---
+
+## 📌 Future Improvements
+
+- Integrate real-time URL scanning API  
+- Deploy model as a REST API (FastAPI/Spring Boot)  
+- Add streaming detection (Kafka-based pipeline)  
+- Improve feature engineering with NLP-based URL analysis  
+
+---
+
+## 📬 Contact
+
+Open to discussions on:
+- Machine learning systems
+- Cybersecurity analytics
+- Real-time data pipelines
+- Backend + ML integration
