@@ -1,106 +1,108 @@
+# Real-Time Phishing Detection Platform (Production ML System)
 
-# Real-Time Phishing Detection Platform
+A **production-grade distributed system** that detects phishing URLs in real time using machine learning, streaming pipelines, and cloud-native microservices.
 
-![Azure](https://img.shields.io/badge/Azure-AKS-blue?logo=microsoftazure)
-![Spark](https://img.shields.io/badge/Apache%20Spark-ETL-orange?logo=apachespark)
-![Kafka](https://img.shields.io/badge/Streaming-Kafka-black?logo=apachekafka)
-![MLflow](https://img.shields.io/badge/MLOps-MLflow-blue)
-![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-green?logo=springboot)
-![Python](https://img.shields.io/badge/ML-Python-yellow?logo=python)
-
-A **production-grade ML security system** that detects phishing URLs in real time using distributed data pipelines, unsupervised learning, and cloud-native microservices on Azure Kubernetes Service (AKS).
+Designed to demonstrate **ML engineering + backend systems + scalable architecture (SWE-focused AI system design).**
 
 ---
 
-## ⚡ Impact Summary
+## ⚡ Why This Project Matters (SWE Framing)
 
-- 🔥 Processed **500K+ URLs/day** using distributed Spark pipelines  
-- ⚡ Achieved **50ms p99 inference latency** in production API  
-- 📉 Reduced **manual security triage by 80%**  
-- 🧠 Detected key phishing vectors: IP-based URLs, subdomain abuse, URL shorteners, HTTPS misuse, domain age anomalies  
+This is not a notebook model — it is a **fully deployed ML system** with:
+
+- Real-time data ingestion (Kafka)
+- Distributed processing (Spark on Databricks)
+- ML inference service (Spring Boot API)
+- Cloud deployment (Azure AKS Kubernetes)
+- Production monitoring (Prometheus + Grafana)
 
 ---
 
-## 🏗️ System Architecture
+## 🧠 System Architecture
 
-```
 
-Databricks Lakehouse
+Data Sources (URL Streams)
 ↓
-PySpark ETL (500K+ URLs/day)
+Databricks (Spark ETL)
 ↓
-Feature Engineering (15+ URL signals)
+Feature Engineering (15+ signals)
 ↓
-Isolation Forest (Anomaly Detection)
+Isolation Forest Model
 ↓
 MLflow Model Registry
 ↓
-Spring Boot REST API (Java)
+Spring Boot Inference API (Java)
 ↓
-Azure AKS (Kubernetes + Helm + GitOps)
+Azure Kubernetes Service (AKS)
 ↓
 Kafka Event Streaming
 ↓
-WhatsApp Business API Alerts
+Alerting System (WhatsApp API)
 
-```
 
 ---
 
-## 🧠 Core Contributions
+## 🔥 Engineering Highlights (What Recruiters Care About)
 
-### Data Engineering
-- Built scalable **PySpark ETL pipelines** on Databricks
-- Processed **high-volume URL streams (500K+/day)**
-- Designed distributed feature engineering layer
+### 🧱 Distributed Systems
+- Built Spark ETL pipeline processing **500K+ URLs/day**
+- Designed event-driven architecture using **Kafka**
+- Implemented microservices deployed on **Kubernetes (AKS)**
 
-### Machine Learning
-- Implemented **Isolation Forest** for unsupervised phishing detection  
+### ⚙️ Backend Engineering
+- Built low-latency **Java Spring Boot inference API**
+- Achieved **50ms p99 response latency**
+- Designed stateless scalable API layer for ML inference
+
+### 🤖 ML Engineering (Not Just ML)
+- Used **Isolation Forest for anomaly detection**
 - Engineered **15+ behavioral URL features**
-- Managed lifecycle using **MLflow Model Registry**
+- Deployed model via **MLflow registry**
 
-### Backend & Infrastructure
-- Developed **low-latency Spring Boot REST API**
-- Deployed microservices on **Azure AKS (Kubernetes)**
-- Designed **event-driven architecture using Kafka**
-
-### Real-Time Alerting
-- Kafka streaming pipeline for threat events  
-- Automated alerts via **WhatsApp Business API**
-
-### MLOps / DevOps
-- GitOps-based CI/CD pipelines  
-- Monitoring with **Prometheus + Grafana**  
-- Helm-based Kubernetes deployments  
+### ☁️ Production / DevOps
+- CI/CD using **GitOps workflows**
+- Infrastructure on **Azure Kubernetes Service**
+- Monitoring via **Prometheus + Grafana**
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 Impact
 
-**Data/ML:** PySpark, Databricks, MLflow, Python, Isolation Forest  
+- 🚀 500K+ URLs processed daily
+- ⚡ 50ms p99 inference latency
+- 📉 80% reduction in manual security triage
+- 🧠 Real-time detection of phishing patterns:
+  - IP-based URLs
+  - URL shorteners
+  - Subdomain abuse
+  - HTTPS spoofing
+  - Domain age anomalies
+
+---
+
+## 🛠️ Tech Stack (SWE-Oriented)
+
 **Backend:** Java, Spring Boot, REST APIs  
-**Cloud:** Azure AKS, Kubernetes, Helm  
+**Data Engineering:** Spark, Databricks  
+**ML:** Python, Isolation Forest, MLflow  
 **Streaming:** Kafka  
+**Cloud:** Azure AKS, Kubernetes, Helm  
+**Observability:** Prometheus, Grafana  
 **Databases:** PostgreSQL, Redis  
-**DevOps:** GitOps, CI/CD, Prometheus, Grafana  
 
 ---
 
-## 📦 Project Status
+## 📌 Key Takeaway
 
-✔ Production-grade system design  
-✔ Cloud-native microservices architecture  
-✔ Real-time streaming ML pipeline  
+This project demonstrates:
 
----
-
-## 📌 Key Engineering Pattern
-
-> Event-driven microservices + real-time ML inference at scale
+> ✔ Ability to design scalable backend systems  
+> ✔ Ability to deploy ML into production  
+> ✔ Understanding of distributed systems + cloud infrastructure  
+> ✔ SWE + ML Engineering hybrid skillset  
 
 ---
 
-## 📬 Open To Discussion
+## 📬 Open to Discussion
 
-System design • ML infrastructure • Real-time data platforms • Backend scalability
-```
+System design • Backend engineering • ML infrastructure • Distributed systems
