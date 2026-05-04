@@ -1,8 +1,4 @@
-Here’s your **clean, modern GitHub README version** tailored for your *Real-Time Phishing Detection Platform* (realtime + production + recruiter-friendly, but still not overhyped):
 
----
-
-```markdown
 # 🔐 Real-Time Phishing Detection Platform
 
 ![Python](https://img.shields.io/badge/ML-Python-yellow?logo=python)
