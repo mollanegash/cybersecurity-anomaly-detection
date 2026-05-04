@@ -1,6 +1,4 @@
-Here’s a **recruiter-optimized GitHub README + portfolio hybrid version** with badges, tighter wording, and stronger impact framing:
 
-```markdown
 # Real-Time Phishing Detection Platform
 
 ![Azure](https://img.shields.io/badge/Azure-AKS-blue?logo=microsoftazure)
@@ -106,4 +104,3 @@ WhatsApp Business API Alerts
 
 System design • ML infrastructure • Real-time data platforms • Backend scalability
 ```
-
